@@ -52,3 +52,14 @@ exercises.c:59:69: error: expected statement before ‘)’ token
       |                                                                     ^
 Compilation failed
 acf1255
+Wed 13 Mar 2024 11:43:17 PM UTC: 
+ exercises.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:1:
+test.c: In function ‘filterEvenNumbers’:
+exercises.c:59:27: error: ‘newArray’ is used uninitialized [-Werror=uninitialized]
+   59 |   int *newArray = (int *) realloc(newArray, sizeof(int) * *newSize);
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+d9b96a7
