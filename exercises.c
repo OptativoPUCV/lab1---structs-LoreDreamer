@@ -4,6 +4,7 @@
 #include <stdlib.h>
 #include <string.h>
 
+
 /*
 Ejercicio 1: Encuentra el Elemento Mayor
 Descripción: Escribe una función que tome un arreglo de enteros
@@ -119,15 +120,15 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) { 
   
-  bool ascendent = true;
-  bool descendent = true;
+  int ascendent = 1;
+  int descendent = 1;
 
   for (size_t i = 0; i < size - 1; i++) {
 
     if (arr[i] > arr[i + 1]) 
-      ascendent = false;
+      ascendent = 0;
     else if (arr[i] < arr[i + 1])
-      descendent = false;
+      descendent = 0;
     
   }
   
