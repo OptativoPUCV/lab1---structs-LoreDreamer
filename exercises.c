@@ -56,23 +56,21 @@ los números pares del arreglo original.
 int *filterEvenNumbers(int arr[], int size, int *newSize) { 
   
   int *newArray = NULL;
-  int cont = 0;
+  int *newSize = 0;
 
   for (size_t i = 0; i < size; i++) {
     if (arr[i] % 2 == 0) {
 
-      newArray = (int *) realloc(NULL, (cont + 1) * sizeof(int));
+      newArray = (int *) realloc(NULL, (*newSize + 1) * sizeof(int));
 
       if (newArray == NULL)
           exit(EXIT_FAILURE);
       
-      newArray[cont] = arr[i];
-      cont++;
+      newArray[*newSize] = arr[i];
+      (*newSize)b++;
 
     }
   }
-
-  *newSize = cont;
   
   return newArray; 
 }

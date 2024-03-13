@@ -15,3 +15,24 @@ Wed 13 Mar 2024 11:39:51 PM UTC:
  tests:  0|4
 total_score: 30/70
 2445ff2
+Wed 13 Mar 2024 11:41:28 PM UTC: 
+ exercises.c | 10 ++++------
+ 1 file changed, 4 insertions(+), 6 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:59:8: error: ‘newSize’ redeclared as different kind of symbol
+   59 |   int *newSize = 0;
+      |        ^~~~~~~
+exercises.c:56:50: note: previous definition of ‘newSize’ with type ‘int *’
+   56 | int *filterEvenNumbers(int arr[], int size, int *newSize) {
+      |                                             ~~~~~^~~~~~~
+exercises.c:70:8: error: statement with no effect [-Werror=unused-value]
+   70 |       (*newSize)b++;
+      |       ~^~~~~~~~~
+exercises.c:70:17: error: expected ‘;’ before ‘b’
+   70 |       (*newSize)b++;
+      |                 ^
+      |                 ;
+cc1: all warnings being treated as errors
+Compilation failed
+aae0db6
