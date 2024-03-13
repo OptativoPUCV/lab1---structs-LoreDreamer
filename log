@@ -63,3 +63,9 @@ exercises.c:59:27: error: ‘newArray’ is used uninitialized [-Werror=uninitia
 cc1: all warnings being treated as errors
 Compilation failed
 d9b96a7
+Wed 13 Mar 2024 11:43:51 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+ tests:  0|4
+total_score: 30/70
+428048c
