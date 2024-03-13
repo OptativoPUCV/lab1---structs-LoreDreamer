@@ -170,3 +170,20 @@ Wed 13 Mar 2024 11:57:00 PM UTC:
  tests:  0|3
 total_score: 40/70
 706e3f0
+Wed 13 Mar 2024 11:58:08 PM UTC: 
+ exercises.c | 15 +++++++++++++++
+ 1 file changed, 15 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:134:14: error: expected ‘;’ before ‘else’
+  134 |     return -1
+      |              ^
+      |              ;
+  135 |   else
+      |   ~~~~        
+exercises.c:138:1: error: control reaches end of non-void function [-Werror=return-type]
+  138 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+6c9e4cb
