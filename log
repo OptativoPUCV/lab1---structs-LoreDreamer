@@ -42,3 +42,13 @@ Wed 13 Mar 2024 11:41:56 PM UTC:
  tests:  0|4
 total_score: 30/70
 a5a75b5
+Wed 13 Mar 2024 11:43:03 PM UTC: 
+ exercises.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘filterEvenNumbers’:
+exercises.c:59:69: error: expected statement before ‘)’ token
+   59 |   int *newArray = (int *) realloc(newArray, sizeof(int) * *newSize););
+      |                                                                     ^
+Compilation failed
+acf1255
