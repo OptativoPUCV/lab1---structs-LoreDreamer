@@ -120,25 +120,23 @@ y luego devuelva 1 si el arreglo está ordenado en orden ascendente,
 */
 int checkSorted(int arr[], int size) { 
   
-  int ascendent = 1;
-  int descendent = 1;
+  int ascendente = 1;
+  int descendente = 1;
 
   for (size_t i = 0; i < size - 1; i++) {
 
-    if (arr[i] > arr[i + 1]) 
-      ascendent = 0;
+    if (arr[i] > arr[i + 1])
+      ascendente = 0;
     else if (arr[i] < arr[i + 1])
-      descendent = 0;
-    
+      descendente = 0;
   }
-  
-  if (ascendent)
-    return 1
-  else if (descendent)
+
+  if (ascendente == 1)
+    return 1;
+  else if (descendente == 1)
     return -1;
   else 
     return 0;
-  
 }
 
 /*

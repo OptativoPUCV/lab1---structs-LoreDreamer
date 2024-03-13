@@ -129,3 +129,9 @@ exercises.c:124:7: error: variable ‘descendent’ set but not used [-Werror=un
 cc1: all warnings being treated as errors
 Compilation failed
 c448ad8
+Wed 13 Mar 2024 11:54:25 PM UTC: 
+ exercises.c | 15 +++++++--------
+ 1 file changed, 7 insertions(+), 8 deletions(-)
+ tests:  0|3
+total_score: 40/70
+80652e5
