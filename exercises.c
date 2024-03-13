@@ -126,6 +126,8 @@ int checkSorted(int arr[], int size) {
   for (size_t i = 0; i < size - 1; i++) {
     if (arr[i] > arr[i + 1])
       asc = 0;
+    else if (arr[i] < arr[i + 1])
+      des = 0;
   }
 
   if (asc)
