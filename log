@@ -75,3 +75,40 @@ Wed 13 Mar 2024 11:47:43 PM UTC:
  tests:  0|3
 total_score: 40/70
 c6bdc03
+Wed 13 Mar 2024 11:51:54 PM UTC: 
+ exercises.c | 23 ++++++++++++++++++++++-
+ 1 file changed, 22 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘checkSorted’:
+exercises.c:122:3: error: unknown type name ‘bool’
+  122 |   bool ascendent = true;
+      |   ^~~~
+exercises.c:6:1: note: ‘bool’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+    5 | #include <string.h>
+  +++ |+#include <stdbool.h>
+    6 | 
+exercises.c:122:20: error: ‘true’ undeclared (first use in this function)
+  122 |   bool ascendent = true;
+      |                    ^~~~
+exercises.c:122:20: note: ‘true’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+exercises.c:122:20: note: each undeclared identifier is reported only once for each function it appears in
+exercises.c:123:3: error: unknown type name ‘bool’
+  123 |   bool descendent = true;
+      |   ^~~~
+exercises.c:123:3: note: ‘bool’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+exercises.c:128:19: error: ‘false’ undeclared (first use in this function)
+  128 |       ascendent = false;
+      |                   ^~~~~
+exercises.c:128:19: note: ‘false’ is defined in header ‘<stdbool.h>’; did you forget to ‘#include <stdbool.h>’?
+exercises.c:135:13: error: expected ‘;’ before ‘else’
+  135 |     return 1
+      |             ^
+      |             ;
+  136 |   else if (descendent)
+      |   ~~~~       
+exercises.c:123:8: error: variable ‘descendent’ set but not used [-Werror=unused-but-set-variable]
+  123 |   bool descendent = true;
+      |        ^~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+2405bcf
