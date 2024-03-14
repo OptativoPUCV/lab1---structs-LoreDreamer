@@ -220,3 +220,16 @@ exercises.c:178:15: error: invalid type argument of ‘->’ (have ‘Autor’)
       |               ^~
 Compilation failed
 0e975d5
+Thu 14 Mar 2024 12:02:21 AM UTC: 
+ exercises.c | 10 ----------
+ 1 file changed, 10 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:166:22: error: invalid type argument of ‘->’ (have ‘Autor’)
+  166 |   strcpy(libro->autor->nombre, nombreAutor);
+      |                      ^~
+exercises.c:168:15: error: invalid type argument of ‘->’ (have ‘Autor’)
+  168 |   libro->autor->anioNacimiento = anioNacimiento;
+      |               ^~
+Compilation failed
+5b74558

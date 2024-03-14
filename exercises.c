@@ -161,16 +161,6 @@ typedef struct {
 } Libro;
 
 void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) {
-
-  libro = malloc(sizeof(Libro));
-
-  if (libro == NULL)
-    exit(EXIT_FAILURE);
-
-  libro->autor = malloc(sizeof(Autor));
-
-  if (libro->autor == NULL)
-    exit(EXIT_FAILURE);
   
   strcpy(libro->titulo, titulo);
   strcpy(libro->autor->nombre, nombreAutor);
