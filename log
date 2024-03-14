@@ -199,3 +199,24 @@ Wed 13 Mar 2024 11:58:43 PM UTC:
  tests:  0|2
 total_score: 50/70
 a3a998f
+Thu 14 Mar 2024 12:01:28 AM UTC: 
+ exercises.c | 21 +++++++++++++++++++--
+ 1 file changed, 19 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:170:18: error: incompatible types when assigning to type ‘Autor’ from type ‘void *’
+  170 |   libro->autor = malloc(sizeof(Autor));
+      |                  ^~~~~~
+exercises.c:172:20: error: invalid operands to binary == (have ‘Autor’ and ‘void *’)
+  172 |   if (libro->autor == NULL)
+      |       ~~~~~~~~~~~~ ^~
+      |            |
+      |            Autor
+exercises.c:176:22: error: invalid type argument of ‘->’ (have ‘Autor’)
+  176 |   strcpy(libro->autor->nombre, nombreAutor);
+      |                      ^~
+exercises.c:178:15: error: invalid type argument of ‘->’ (have ‘Autor’)
+  178 |   libro->autor->anioNacimiento = anioNacimiento;
+      |               ^~
+Compilation failed
+0e975d5

@@ -124,10 +124,12 @@ int checkSorted(int arr[], int size) {
   int des = 1;
 
   for (size_t i = 0; i < size - 1; i++) {
+    
     if (arr[i] > arr[i + 1])
       asc = 0;
     else if (arr[i] < arr[i + 1])
       des = 0;
+    
   }
 
   if (asc)
@@ -158,8 +160,25 @@ typedef struct {
   int anioPublicacion;
 } Libro;
 
-void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
-                      int anioNacimiento, int anioPublicacion) {}
+void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor, int anioNacimiento, int anioPublicacion) {
+
+  libro = malloc(sizeof(Libro));
+
+  if (libro == NULL)
+    exit(EXIT_FAILURE);
+
+  libro->autor = malloc(sizeof(Autor));
+
+  if (libro->autor == NULL)
+    exit(EXIT_FAILURE);
+  
+  strcpy(libro->titulo, titulo);
+  strcpy(libro->autor->nombre, nombreAutor);
+
+  libro->autor->anioNacimiento = anioNacimiento;
+  libro->anioPublicacion = anioPublicacion;
+
+}
 
 /*
 Ejercicio 7: Lista enlazada de números
